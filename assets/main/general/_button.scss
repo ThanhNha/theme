@@ -1,0 +1,185 @@
+//main button
+.main-btn {
+  display: inline-block;
+  padding: 7px 15px;
+
+  @media (min-width: 991px) {
+    padding: 10px 20px;
+  }
+
+  border-radius: 0.5rem;
+  color: $white;
+  background: $color-red-400;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s linear;
+  overflow: hidden;
+  z-index: 0;
+  &:hover {
+    color: $white;
+  }
+}
+
+.main-btn.btn__cta {
+  color: $color-red-500;
+  background: $white;
+  &:hover {
+    color: $white;
+  }
+}
+// .main-btn.border {
+//   background: transparent !important;
+//   color: $color-red-500;
+//   border: 1px solid $color-red-500 !important;
+//   &:focus {
+//     box-shadow: none;
+//   }
+//   @include transition;
+//   &:hover {
+//     background: $color-red-400;
+//     color: $white;
+//   }
+// }
+// .main-btn::before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 0;
+//   bottom: 0;
+//   right: 0;
+//   background: $navi;
+//   z-index: -1;
+//   transition: 0.3s linear;
+// }
+// .main-btn:hover::before {
+//   height: 100%;
+//   top: 0;
+// }
+.btn__form {
+  background: $color-red-400;
+  border-radius: 15px;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 12px 20px;
+  font-weight: bold;
+  @include transition;
+  &:hover {
+    background: $color-red-500;
+  }
+}
+
+.button {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+
+.hover-menu {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200%;
+    z-index: -1;
+    height: 0;
+    width: 100%;
+    background: $color-red-500;
+    transition: all 1.5s ease;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    // border-radius: 100% 0 0 100%/100% 30% 70% 0;
+  }
+  &:hover {
+    @include desktop {
+      &::before {
+        // right: 0;
+        height: 250px;
+        width: 250%;
+        background: $color-red-500;
+      }
+    }
+  }
+}
+
+//btn animation
+.btn-click {
+  cursor: pointer;
+  border: 0;
+  // color: red;
+  background: transparent;
+  border-radius: 15px;
+  min-width: 1em;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  will-change: transform;
+  outline: 0;
+  transform: translateZ(0) rotate(0.001deg);
+}
+.btn-fill {
+  background: $color-red-500;
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -25%;
+  transform: translate3d(0, -76%, 0);
+  will-change: transform;
+  transition: background-color ease-in-out 0.25s;
+}
+.btn-red {
+  .btn-fill {
+    background: $color-red-400;
+  }
+}
+.btn-outline-red .btn-click {
+  border: 1px solid $color-red-500;
+}
+//btn-not-background
+.btn-outline-red .btn-click {
+  border: 1px solid $color-red-500;
+}
+
+.btn-outline-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $color-red-500;
+  }
+}
+//btn-background-red
+.btn-red .btn-click {
+  background: $color-red-500;
+}
+.btn-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $white;
+  }
+}

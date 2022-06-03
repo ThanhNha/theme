@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main/main.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Theme-1</title>
+</head>
+
+<body data-barba="wrapper">
+    <div class="loader"></div>
+    <div id="overlay" class="overlay lg:hidden block duration-300"></div>
+    <header id="header" class="header z-50">
+        <div class="header-menu lg:h-[80px] md:h-[60px] h-[50px] shadow-lg shadow-gray-200/50">
+            <div class="grid grid-cols-12 ">
+                <div class="col-span-2 lg:block hidden"></div>
+                <div class="lg:col-span-8 col-span-9  relative">
+                    <div class="lg:h-[80px] md:h-[60px] h-[50px] flex items-center lg:justify-center lg:ml-0 ml-4">
+                        <img src="./images/logo_ngang.png"
+                            class="lg:max-w-[200px] md:max-w-[150px] max-w-[100px] object-scale-down picture-cover"
+                            alt="">
+                    </div>
+                    <div class="absolute top-0 right-0 h-full w-full lg:max-w-[200px] md:max-w-[150px] max-w-[120px]">
+                        <div class="grid grid-cols-2 h-full">
+                            <div class="flex items-center border-x-[1px]">
+                                <button id="search" type="button" class="btn block flex-1">
+                                    <span class="icon-search-open text-gray-400 text-[25px]"> <i
+                                            class="icofont-search-2"></i></span>
+                                    <span class="icon-search-close text-[25px] text-red-300 hidden"> <i
+                                            class="icofont-close-line-circled"></i></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center relative">
+                                <div class="hamburger-menu" id="hamburger">
+                                    <div class="menu-bar1"></div>
+                                    <div class="menu-bar2"></div>
+                                    <div class="menu-bar3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 col-span-3">
+                    <div class="bg-red-300 h-full">
+                        <a href="#"
+                            class="text-white uppercase hover:text-gray-400 flex-col  flex items-center justify-center h-full">
+                            <span class="block duration-300">Contact</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu desktop -->
+        <div class="menu-sidebar lg:block hidden fixed lg:top-[80px] md:top-[60px] top-[50px] left-0 right-0">
+            <div class="container">
+                <div class="pt-[40px]">
+                    <div class="grid grid-cols-2">
+                        <div class="wrapper-main-menu">
+                            <ul id="menu-main-menu" class="w-[80%]">
+                                <li class="item-menu mb-[40px] p1 capitalize text-red-400">
+                                    <a href="index.html" class="pl-[30px]">Home</a>
+                                </li>
+                                <li class="item-menu mb-[40px] p1 capitalize relative">
+                                    <span class="body-text absolute left-0 icon-dropdown"><i
+                                            class="icofont-plus"></i></span>
+                                    <a href="page.html" class="pl-[30px]">All product</a>
+                                    <div class="sub-menu absolute right-0 top-0">
+                                        <ul class="lg:pl-[20px] flex flex-col space-y-[25px]">
+                                            <li class="font-bold">Product 1</li>
+                                            <li class="font-bold">Product 2</li>
+                                            <li class="font-bold">Product 3</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item-menu mb-[40px] p1 capitalize">
+                                    <a href="#" class="pl-[30px]">Page 2</a>
+                                </li>
+                                <li class="item-menu mb-[40px] p1 capitalize">
+                                    <a href="#" class="pl-[30px]">FAQ</a>
+                                </li>
+                                <li class="item-menu mb-[40px] p1 capitalize relative">
+                                    <span class="body-text absolute left-0 icon-dropdown"><i
+                                            class="icofont-plus"></i></span>
+                                    <a href="page.html" class="pl-[30px]">All product</a>
+                                    <div class="sub-menu absolute right-0 top-0">
+                                        <ul class="lg:pl-[20px] flex flex-col space-y-[25px]">
+                                            <li class="font-bold">Product 1</li>
+                                            <li class="font-bold">Product 2</li>
+                                            <li class="font-bold">Product 3</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social_wrapper">
+                            <div class="grid lg:gap-y-[40px] md:gap-y-[36px] gap-y-[20px]">
+                                <div class="flex flex-col items-start">
+                                    <div
+                                        class=" flex items-center justify-center overflow-hidden w-[50px] h-[50px] border-red-400 border-[1px] rounded-full">
+                                        <span class="p1 block text-center ">
+                                            <i class="icofont-location-pin"></i>
+                                        </span>
+                                    </div>
+                                    <div class="mt-[20px] sub-heading">
+                                        <span>Location</span>
+                                    </div>
+                                    <div class=""><a href="#">Ở đâu đó đó chỗ này.</a></div>
+                                </div>
+                                <div class="flex flex-col items-start">
+                                    <div
+                                        class=" flex items-center justify-center overflow-hidden w-[50px] h-[50px] border-red-400 border-[1px] rounded-full">
+                                        <span class="p1 block text-center ">
+                                            <i class="icofont-mail"></i>
+                                        </span>
+                                    </div>
+                                    <div class="mt-[20px] sub-heading">
+                                        <span>Email</span>
+                                    </div>
+                                    <div class=""><a href="#">nhathanh024@gmail.com</a></div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class=" flex items-center justify-center text-red-400 duration-300  hover:text-white hover:bg-red-300 overflow-hidden w-[50px] h-[50px] bg-red-200 rounded-full">
+                                        <a href="#" class="block text-center ">
+                                            <i class="icofont-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class=" flex items-center justify-center text-red-400 duration-300  hover:text-white hover:bg-red-300 overflow-hidden w-[50px] h-[50px] bg-red-200 rounded-full">
+                                        <a href="#" class="block text-center ">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class=" flex items-center justify-center text-red-400 duration-300  hover:text-white hover:bg-red-300 overflow-hidden w-[50px] h-[50px] bg-red-200 rounded-full">
+                                        <a href="#" class="block text-center ">
+                                            <i class="icofont-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu mobile -->
+        <div class="menu-mobile lg:hidden block">
+            <div class="bg-white h-full">
+                <div id="hamburger_mobile"
+                    class="flex items-center justify-end h-[50px] border-gray-50 border-b-[1px] relative">
+                    <div class="hamburger-menu active">
+                        <div class="menu-bar1"></div>
+                        <div class="menu-bar2"></div>
+                        <div class="menu-bar3"></div>
+                    </div>
+                </div>
+                <ul class="flex flex-col">
+                    <li class="p-4 border-y-[1px] border-gray-50">
+                        <a href="#" class="pl-4">page home</a>
+                    </li>
+                    <li class="p-4 border-y-[1px] border-gray-50">
+                        <a href="#" class="pl-4">page home</a>
+                    </li>
+                    <li class="p-4 border-y-[1px] border-gray-50">
+                        <a href="#" class="pl-4">page home</a>
+                    </li>
+                    <li class="p-4 border-y-[1px] border-gray-50">
+                        <a href="#" class="pl-4">page home</a>
+                    </li>
+                    <li class="p-4 border-y-[1px] border-gray-50">
+                        <a href="#" class="pl-4">page home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="page" data-barba="container" data-barba-namespace="page">
+        page home
+    </main>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/main/barba/barba.core.js"></script>
+<script src="./assets/main/barba/barba.umd.js"></script>
+<script src="./animation.js"></script>
+
+</html>
