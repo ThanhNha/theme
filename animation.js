@@ -28,7 +28,7 @@ let overlay = document.querySelector("#overlay");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  body.classList.toggle("overflow-hidden");
+  body.classList.toggle("fix");
   menu.classList.toggle("open");
   menu_mobile.classList.toggle("active");
   overlay.classList.toggle("active");

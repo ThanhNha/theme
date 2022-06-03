@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/main/main.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Theme-1</title>
@@ -180,7 +181,48 @@
         </div>
     </header>
     <main id="page" data-barba="container" data-barba-namespace="page">
-        page home
+
+        <section id="banner-home" class="banner-home">
+            <div class="relative lg:max-h-[800px] lg:min-h-[700px] md:min-h-[500px] h-[55vh] md:max-h-[600px] ">
+                <div class="absolute top-0 bottom-0 right-0 left-0 -z-[99]">
+                    <img src="./images/img1.png" alt="" class="picture-cover object-cover">
+                </div>
+                <div class="container h-full">
+                    <div class="hero-text flex flex-col justify-center h-full">
+                        <div class="wrapper-text flex flex-col space-y-4 max-w-[500px]">
+                            <div class="title text-red-400 uppercase sub-heading">Sub Title</div>
+                            <h1 class="h2">Title</h1>
+                            <p class="">Our trade platform for B2B customers is ready to use now! This
+                                trade platform
+                                is our way to enhance the customer experience, where you can purchase a B2B ord...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-section2">
+            <div class="pt-[100px]">
+                <div class="container">
+                    <div class="flex flex-col text-center">
+                        <span class="text-red-400 uppercase font-bold mt-[20px]">Sub label</span>
+                        <h2 class="h3 mb-[50px]">Product-1</h2>
+                    </div>
+
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true ,"wrapAround": true, "prevNextButtons": false,
+"pageDots":false}'>
+                        <div class="max-w-[32%] mr-[2%]">
+                            <img src="./images/anh2.jpg" alt="">
+                        </div>
+                        <div class="max-w-[32%] mr-[2%]">
+                            <img src="./images/anh3.jpg" alt="">
+                        </div>
+                        <div class="max-w-[32%] mr-[2%]">
+                            <img src="./images/anh4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
@@ -192,6 +234,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/main/barba/barba.core.js"></script>
 <script src="./assets/main/barba/barba.umd.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./animation.js"></script>
 
 </html>
