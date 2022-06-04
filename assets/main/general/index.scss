@@ -22,3 +22,16 @@
   height: 100%;
   width: 100%;
 }
+
+.banner-text__logo {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: $color-gray-300;
+    top: 50%;
+    z-index: -1;
+  }
+}

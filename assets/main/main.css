@@ -9178,4 +9178,17 @@ flexbox
   width: 100%;
 }
 
+.banner-text__logo {
+  position: relative;
+}
+.banner-text__logo::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #c8c8c8;
+  top: 50%;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=main.css.map */
