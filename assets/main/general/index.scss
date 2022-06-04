@@ -1,4 +1,5 @@
-.banner-text__image:before {
+.banner-text__image:before,
+.banner-carousel__item-image:before {
   content: "";
   display: block;
   padding-bottom: 80%;
@@ -6,7 +7,7 @@
     padding-bottom: 60%;
   }
   @include desktop {
-    padding-bottom: 40%;
+    padding-bottom: 55%;
   }
 }
 
@@ -34,4 +35,10 @@
     top: 50%;
     z-index: -1;
   }
+}
+
+.partner-logo__list-item-image:before {
+  content: "";
+  display: block;
+  padding-bottom: 71.48438%;
 }

@@ -540,12 +540,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.left-\[5\%\] {
+  left: 5%;
+}
+
 .z-50 {
   z-index: 50;
 }
 
 .-z-\[99\] {
   z-index: -99;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .col-span-2 {
@@ -558,6 +570,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .ml-4 {
@@ -696,6 +716,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 20px;
 }
 
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
 .space-y-\[25px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(25px * calc(1 - var(--tw-space-y-reverse)));
@@ -815,6 +840,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 50px;
 }
 
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -911,6 +940,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 60px;
   }
 
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .md\:h-\[60px\] {
     height: 60px;
   }
@@ -925,6 +958,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:max-w-\[150px\] {
     max-width: 150px;
+  }
+
+  .md\:max-w-\[50\%\] {
+    max-width: 50%;
   }
 
   .md\:gap-y-\[36px\] {
@@ -971,6 +1008,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:max-w-\[200px\] {
     max-width: 200px;
+  }
+
+  .lg\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .lg\:max-w-\[425px\] {
+    max-width: 425px;
   }
 
   .lg\:justify-center {
