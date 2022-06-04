@@ -9148,4 +9148,34 @@ flexbox
   opacity: 1;
 }
 
+.banner-text__image:before {
+  content: "";
+  display: block;
+  padding-bottom: 80%;
+}
+@media (min-width: 768px) {
+  .banner-text__image:before {
+    padding-bottom: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .banner-text__image:before {
+    padding-bottom: 40%;
+  }
+}
+
+.image--contain,
+.image--cover {
+  position: relative;
+}
+
+.image--contain .image__img,
+.image--cover .image__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

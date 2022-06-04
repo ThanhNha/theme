@@ -544,14 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 50;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-\[-99\] {
-  z-index: -99;
-}
-
 .-z-\[99\] {
   z-index: -99;
 }
@@ -566,11 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.mx-\[2\%\] {
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .ml-4 {
@@ -589,16 +576,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 50px;
 }
 
-.ml-\[2\%\] {
-  margin-left: 2%;
-}
-
 .mr-\[2\%\] {
   margin-right: 2%;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-\[50px\] {
+  margin-top: 50px;
 }
 
 .block {
@@ -633,10 +616,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 55vh;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -665,12 +644,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 500px;
 }
 
-.max-w-\[30\%\] {
-  max-width: 30%;
-}
-
 .max-w-\[32\%\] {
   max-width: 32%;
+}
+
+.max-w-\[50\%\] {
+  max-width: 50%;
 }
 
 .flex-1 {
@@ -729,16 +708,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-y-\[15px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(15px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(15px * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-\[20px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(20px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(20px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -824,6 +809,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[100px\] {
   padding-top: 100px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 
 .text-center {
@@ -974,10 +963,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:max-h-\[800px\] {
     max-height: 800px;
-  }
-
-  .lg\:min-h-\[600px\] {
-    min-height: 600px;
   }
 
   .lg\:min-h-\[700px\] {
